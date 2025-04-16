@@ -95,6 +95,7 @@
 .black-btn {
   background-color: rgba(16, 16, 16, 0.8980392157);
   color: var(--color_white);
+  border: none;
   border-radius: 20px;
   display: inline-flex;
   justify-content: center;
@@ -102,8 +103,8 @@
   gap: 8px;
   padding: 10px 16px;
   transition: var(--trans);
-  height: -moz-fit-content;
   height: fit-content;
+  cursor: pointer;
 }
 .black-btn .btn-icon {
   height: 20px;
@@ -134,8 +135,8 @@
   gap: 8px;
   padding: 10px 16px;
   transition: var(--trans);
-  height: -moz-fit-content;
   height: fit-content;
+  cursor: pointer;
 }
 .stroke-b-btn .btn-icon {
   height: 20px;
@@ -173,8 +174,8 @@
   gap: 8px;
   padding: 10px 16px;
   transition: var(--trans);
-  height: -moz-fit-content;
   height: fit-content;
+  cursor: pointer;
 }
 .white-btn .btn-icon {
   height: 20px;
@@ -212,8 +213,8 @@
   gap: 8px;
   padding: 10px 16px;
   transition: var(--trans);
-  height: -moz-fit-content;
   height: fit-content;
+  cursor: pointer;
 }
 .stroke-g-btn .btn-icon {
   height: 20px;
@@ -241,6 +242,7 @@
 .green-btn {
   background-color: var(--color_green_400);
   color: var(--color_white);
+  border: none;
   border-radius: 20px;
   display: inline-flex;
   justify-content: center;
@@ -248,8 +250,8 @@
   gap: 8px;
   padding: 10px 16px;
   transition: var(--trans);
-  height: -moz-fit-content;
   height: fit-content;
+  cursor: pointer;
 }
 .green-btn .btn-icon {
   height: 20px;
@@ -273,6 +275,12 @@
   background-color: var(--color_black_10);
   padding: 10px;
   border-radius: 20px;
+  border: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--trans);
+  cursor: pointer;
 }
 .gray-btn .btn-icon {
   height: 20px;
@@ -308,9 +316,7 @@ body {
 img {
   width: 100%;
   display: block;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 
 ::-webkit-scrollbar {
@@ -325,10 +331,9 @@ img {
 ::-webkit-scrollbar-thumb {
   background: #4d3e31;
   border-radius: 6px;
-  -webkit-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: #453526;
-}/*# sourceMappingURL=base.css.map */
+}

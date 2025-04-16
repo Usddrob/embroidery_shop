@@ -101,6 +101,7 @@
   padding: 10px 16px;
   transition: var(--trans);
   height: fit-content;
+  cursor: pointer;
 
   .btn-icon {
     height: 20px;
@@ -120,6 +121,7 @@
 .black-btn {
   background-color: #101010E5;
   color: var(--color_white);
+  border: none;
   @include general-btn;
 
   .btn-icon path {
@@ -203,6 +205,7 @@
 .green-btn {
   background-color: var(--color_green_400);
   color: var(--color_white);
+  border: none;
   @include general-btn;
   
   .btn-icon path {
@@ -218,6 +221,12 @@
   background-color: var(--color_black_10);
   padding: 10px;
   border-radius: 20px;
+  border: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--trans);
+  cursor: pointer;
 
   .btn-icon {
     height: 20px;
