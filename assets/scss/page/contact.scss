@@ -1,0 +1,209 @@
+.hero-section {
+    .left {
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.form-section {
+    padding: 10px;
+    background-color: var(--color_green_500);
+    display: flex;
+    row-gap: 32px;
+
+    .left, .right {
+        flex: 1;
+    }
+
+    .form-info {
+        padding: 140px 30px;
+
+        h2 {
+            margin-bottom: 52px;
+            color: var(--color_white);
+        }
+
+        p:last-of-type {
+            max-width: 424px;
+            color: var(--color_white);
+        }
+    }
+
+    .form-title {
+        color: var(--color_pure_400);
+        margin-bottom: 32px;
+    }
+
+    .form-container {
+        background-color: var(--color_pure_400);
+        border-radius: 20px;
+        padding: 32px;
+
+        h4 {
+            margin-bottom: 28px;
+        }
+    }
+
+    fieldset {
+        border: none;
+
+        &:not(:last-of-type) {
+            margin-bottom: 24px;
+        }
+
+        legend {
+            margin-bottom: 8px;
+        }
+    }
+
+    .inputs {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+
+        .input-box {
+            flex: 1;
+        }
+
+        input {
+            background-color: transparent;
+            min-width: 250px;
+        }
+    }
+
+    .form-text {
+        p {
+            color: #00000099;
+        }
+    }
+
+    .form-checkboxes {
+        display: flex;
+        gap: 4px;
+        flex-wrap: wrap;
+    }
+
+    .form-file {
+        margin-bottom: 54px;
+
+        .select_file {
+            border: 1px dashed #10101033;
+            border-radius: 20px;
+            padding: 22px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            align-items: center;
+            outline-offset: 2px;
+            transition: var(--trans);
+            text-align: center;
+
+            .green-btn {
+                width: 40px;
+                height: 40px;
+            }
+
+            p:first-of-type {
+                color: #101010B2;
+            }
+
+            button {
+                color: var(--color_green_500);
+                border: none;
+                background: none;
+                cursor: pointer;
+            }
+
+            p:last-of-type {
+                color: #10101080;
+            }
+
+            &:hover {
+                background-color: #1010100D;
+            }
+    
+            &:active, &.dragover {
+                border-color: #10101080;
+                background-color: var(--color_black_10);
+            }
+    
+            &:focus-visible {
+                outline: 1px solid var(--color_green_500);
+            }
+
+            .file-preview {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    }
+
+    .form-bottom {
+        display: flex;
+        gap: 32px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 800px) {
+    .form-section {
+        flex-direction: column;
+        padding: 80px 20px 20px;
+
+        &:first-child {
+            padding-top: 114px;
+        }
+
+        .form-info {
+            padding: 0;
+        }
+    }
+}
+
+@media (max-width: 616px) {
+    .form-section {
+        .inputs:not(:last-child) {
+            margin-bottom: 12px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .form-section {
+        .form-title {
+            margin-bottom: 20px;
+        }
+
+        .form-info {
+            h2 {
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 38px;
+                letter-spacing: -0.75px;
+                margin-bottom: 32px;
+            }
+        }
+
+        .form-checkboxes {
+            flex-direction: column;
+        }
+
+        .form-file {
+            margin-bottom: 24px;
+
+            .select_file {
+                padding: 20px;
+            }
+        }
+    }
+}
